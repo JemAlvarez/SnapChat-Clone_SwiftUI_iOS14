@@ -11,7 +11,7 @@ struct MainView: View {
     
     var body: some View {
         VStack (spacing: 0) {
-            ZStack (alignment: .top) {
+            ZStack (alignment: .topTrailing) {
                 GeometryReader { geo in
                     ScrollView {
                         TabView (selection: $tabBarViewModel.tab) {
@@ -35,8 +35,12 @@ struct MainView: View {
                 .cornerRadius(15)
                 .edgesIgnoringSafeArea(.all)
                 
+                if tabBarViewModel.tab == 2 {
+                    CameraSettingsButtonsView()
+                }
+                
                 HeaderBarView {
-                    if tabBarViewModel.tab != 0 && tabBarViewModel.tab != 4 {
+                    if tabBarViewModel.tab != 0 && tabBarViewModel.tab != 2 && tabBarViewModel.tab != 4 {
                         Button(action: {
                             
                         }) {
@@ -50,12 +54,13 @@ struct MainView: View {
                         Image(systemName:
                             tabBarViewModel.tab == 0 ? "gearshape.fill" :
                             tabBarViewModel.tab == 1 ? "plus.bubble.fill" :
-                            tabBarViewModel.tab == 2 ? "arrow.triangle.capsulepath" :
+                            tabBarViewModel.tab == 2 ? "person.fill.badge.plus" :
                             tabBarViewModel.tab == 3 ? "ellipsis" :
                             tabBarViewModel.tab == 4 ? "arrow.turn.right.up" :
                             "person"
                         )
                     }
+                    .offset(x: tabBarViewModel.tab == 2 ? -55 : 0)
                 } header: {
                     if tabBarViewModel.tab == 0 {
                         Text("Map")
