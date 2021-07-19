@@ -5,7 +5,7 @@ import SwiftUI
 struct StoriesView: View {
     var body: some View {
         ZStack {
-            Color(.purple).edgesIgnoringSafeArea(.all)
+            Assets.shared.getColor(.purple).edgesIgnoringSafeArea(.all)
             
             Text("Stories")
         }

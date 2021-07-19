@@ -5,7 +5,7 @@ import SwiftUI
 struct SpotlightView: View {
     var body: some View {
         ZStack {
-            Color(.red).edgesIgnoringSafeArea(.all)
+            Assets.shared.getColor(.red).edgesIgnoringSafeArea(.all)
             
             Text("Spotlight")
         }

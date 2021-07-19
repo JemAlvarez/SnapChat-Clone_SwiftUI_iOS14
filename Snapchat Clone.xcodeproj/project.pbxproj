@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CA6C808A26A26E2400C74949 /* Snapchat_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C808926A26E2400C74949 /* Snapchat_CloneApp.swift */; };
-		CA6C808C26A26E2400C74949 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C808B26A26E2400C74949 /* ContentView.swift */; };
 		CA6C808E26A26E2700C74949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6C808D26A26E2700C74949 /* Assets.xcassets */; };
 		CA6C809126A26E2700C74949 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6C809026A26E2700C74949 /* Preview Assets.xcassets */; };
 		CA6C809D26A26ED900C74949 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C809C26A26ED900C74949 /* CustomTabBarView.swift */; };
@@ -18,12 +17,13 @@
 		CA6C80A526A26F1500C74949 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C80A426A26F1500C74949 /* StoriesView.swift */; };
 		CA6C80A726A26F2A00C74949 /* SpotlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C80A626A26F2A00C74949 /* SpotlightView.swift */; };
 		CA6C80A926A26FA600C74949 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C80A826A26FA600C74949 /* CameraView.swift */; };
+		CAA52F8C26A5263A00D34413 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA52F8B26A5263A00D34413 /* Assets.swift */; };
+		CAA52F8E26A5360C00D34413 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA52F8D26A5360C00D34413 /* TabBarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA6C808626A26E2400C74949 /* Snapchat Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snapchat Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6C808926A26E2400C74949 /* Snapchat_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapchat_CloneApp.swift; sourceTree = "<group>"; };
-		CA6C808B26A26E2400C74949 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA6C808D26A26E2700C74949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA6C809026A26E2700C74949 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA6C809226A26E2700C74949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +34,8 @@
 		CA6C80A426A26F1500C74949 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		CA6C80A626A26F2A00C74949 /* SpotlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightView.swift; sourceTree = "<group>"; };
 		CA6C80A826A26FA600C74949 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		CAA52F8B26A5263A00D34413 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		CAA52F8D26A5360C00D34413 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +73,6 @@
 				CA6C809926A26EB100C74949 /* Views */,
 				CA6C809826A26E9F00C74949 /* Shared */,
 				CA6C808926A26E2400C74949 /* Snapchat_CloneApp.swift */,
-				CA6C808B26A26E2400C74949 /* ContentView.swift */,
 				CA6C808D26A26E2700C74949 /* Assets.xcassets */,
 				CA6C809226A26E2700C74949 /* Info.plist */,
 				CA6C808F26A26E2700C74949 /* Preview Content */,
@@ -90,6 +91,7 @@
 		CA6C809826A26E9F00C74949 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CAA52F8B26A5263A00D34413 /* Assets.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -118,6 +120,7 @@
 		CA6C809B26A26EC000C74949 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CAA52F8D26A5360C00D34413 /* TabBarViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -191,7 +194,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA6C808C26A26E2400C74949 /* ContentView.swift in Sources */,
 				CA6C809F26A26EF400C74949 /* MainView.swift in Sources */,
 				CA6C80A126A26F0100C74949 /* MapView.swift in Sources */,
 				CA6C80A926A26FA600C74949 /* CameraView.swift in Sources */,
@@ -199,6 +201,8 @@
 				CA6C809D26A26ED900C74949 /* CustomTabBarView.swift in Sources */,
 				CA6C80A326A26F0D00C74949 /* ChatView.swift in Sources */,
 				CA6C808A26A26E2400C74949 /* Snapchat_CloneApp.swift in Sources */,
+				CAA52F8C26A5263A00D34413 /* Assets.swift in Sources */,
+				CAA52F8E26A5360C00D34413 /* TabBarViewModel.swift in Sources */,
 				CA6C80A726A26F2A00C74949 /* SpotlightView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

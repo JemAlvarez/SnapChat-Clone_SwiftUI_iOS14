@@ -5,7 +5,7 @@ import SwiftUI
 struct ChatView: View {
     var body: some View {
         ZStack {
-            Color(.blue).edgesIgnoringSafeArea(.all)
+            Assets.shared.getColor(.blue).edgesIgnoringSafeArea(.all)
             
             Text("Chat")
         }

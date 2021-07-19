@@ -5,7 +5,7 @@ import SwiftUI
 struct MapView: View {
     var body: some View {
         ZStack {
-            Color(.green).edgesIgnoringSafeArea(.all)
+            Assets.shared.getColor(.green).edgesIgnoringSafeArea(.all)
             
             Text("Map")
         }

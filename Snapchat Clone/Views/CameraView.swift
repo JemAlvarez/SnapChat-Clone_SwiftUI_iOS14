@@ -5,7 +5,7 @@ import SwiftUI
 struct CameraView: View {
     var body: some View {
         ZStack {
-            Color(.yellow).edgesIgnoringSafeArea(.all)
+            Assets.shared.getColor(.yellow).edgesIgnoringSafeArea(.all)
             
             Text("Camera")
         }
