@@ -19,6 +19,8 @@
 		CA6C80A926A26FA600C74949 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C80A826A26FA600C74949 /* CameraView.swift */; };
 		CAA52F8C26A5263A00D34413 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA52F8B26A5263A00D34413 /* Assets.swift */; };
 		CAA52F8E26A5360C00D34413 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA52F8D26A5360C00D34413 /* TabBarViewModel.swift */; };
+		CAA52F9026A5CDAA00D34413 /* HeaderBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA52F8F26A5CDAA00D34413 /* HeaderBarView.swift */; };
+		CAA52F9226A5CF1800D34413 /* ButtonsStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA52F9126A5CF1800D34413 /* ButtonsStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		CA6C80A826A26FA600C74949 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		CAA52F8B26A5263A00D34413 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		CAA52F8D26A5360C00D34413 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		CAA52F8F26A5CDAA00D34413 /* HeaderBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBarView.swift; sourceTree = "<group>"; };
+		CAA52F9126A5CF1800D34413 /* ButtonsStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				CAA52F8B26A5263A00D34413 /* Assets.swift */,
+				CAA52F9126A5CF1800D34413 /* ButtonsStyles.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 				CA6C80A426A26F1500C74949 /* StoriesView.swift */,
 				CA6C80A626A26F2A00C74949 /* SpotlightView.swift */,
 				CA6C80A826A26FA600C74949 /* CameraView.swift */,
+				CAA52F8F26A5CDAA00D34413 /* HeaderBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA6C809F26A26EF400C74949 /* MainView.swift in Sources */,
+				CAA52F9226A5CF1800D34413 /* ButtonsStyles.swift in Sources */,
 				CA6C80A126A26F0100C74949 /* MapView.swift in Sources */,
 				CA6C80A926A26FA600C74949 /* CameraView.swift in Sources */,
 				CA6C80A526A26F1500C74949 /* StoriesView.swift in Sources */,
@@ -203,6 +210,7 @@
 				CA6C808A26A26E2400C74949 /* Snapchat_CloneApp.swift in Sources */,
 				CAA52F8C26A5263A00D34413 /* Assets.swift in Sources */,
 				CAA52F8E26A5360C00D34413 /* TabBarViewModel.swift in Sources */,
+				CAA52F9026A5CDAA00D34413 /* HeaderBarView.swift in Sources */,
 				CA6C80A726A26F2A00C74949 /* SpotlightView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
