@@ -22,10 +22,10 @@ struct CustomTabBarView: View {
                         VStack {
                             switch i {
                             case 0:
-                                Image(systemName: model.tab == 0 ? "map.fill" : "map")
+                                Image(systemName: "map")
                                     .foregroundColor(model.tab == 0 ? Assets.shared.getColor(.green) : .white)
                             case 1:
-                                Image(systemName: model.tab == 1 ? "bubble.right.fill" : "bubble.right")
+                                Image(systemName: "bubble.right")
                                     .foregroundColor(model.tab == 1 ? Assets.shared.getColor(.blue) : .white)
                             case 2:
                                 Image(systemName: model.tab == 2 ? "camera.viewfinder" : "camera")
@@ -38,10 +38,10 @@ struct CustomTabBarView: View {
                                     }
                                     .animation(.none)
                             case 3:
-                                Image(systemName: model.tab == 3 ? "person.2.fill" : "person.2")
+                                Image(systemName: "person.2")
                                     .foregroundColor(model.tab == 3 ? Assets.shared.getColor(.purple) : .white)
                             case 4:
-                                Image(systemName: model.tab == 4 ? "play.fill" : "play")
+                                Image(systemName: "play")
                                     .foregroundColor(model.tab == 4 ? Assets.shared.getColor(.red) : .white)
                             default:
                                 Text("")
