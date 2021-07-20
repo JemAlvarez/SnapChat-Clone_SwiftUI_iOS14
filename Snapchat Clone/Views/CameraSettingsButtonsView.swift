@@ -26,7 +26,7 @@ struct CameraSettingsButtonsView: View {
             }
             .padding(.vertical, 10)
             .frame(width: 53)
-            .background(Color.secondary.opacity(0.1))
+            .background(Color.white.opacity(0.1))
             .cornerRadius(99)
             
             VStack (alignment: .trailing) {
@@ -106,7 +106,7 @@ struct CameraSettingsButtonsView: View {
                 .font(.system(size: 13).bold())
                 .foregroundColor(.white)
                 .padding(10)
-                .background(Color.secondary)
+                .background(Color.gray)
                 .cornerRadius(99)
             }
             .padding(.horizontal, 10)

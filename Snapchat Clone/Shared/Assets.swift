@@ -11,6 +11,8 @@ struct Assets {
         case yellow
         case purple
         case red
+        case lightBackground
+        case darkBackground
     }
     
     func getColor(_ color: Colors) -> Color {
@@ -25,6 +27,10 @@ struct Assets {
             return Color("purple")
         case .red:
             return Color("red")
+        case .lightBackground:
+            return Color("bgLight")
+        case .darkBackground:
+            return Color("bgDark")
         }
     }
 }

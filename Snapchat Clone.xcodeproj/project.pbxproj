@@ -22,6 +22,10 @@
 		CAA52F9026A5CDAA00D34413 /* HeaderBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA52F8F26A5CDAA00D34413 /* HeaderBarView.swift */; };
 		CAA52F9226A5CF1800D34413 /* ButtonsStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA52F9126A5CF1800D34413 /* ButtonsStyles.swift */; };
 		CAA52F9426A62D5A00D34413 /* CameraSettingsButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA52F9326A62D5A00D34413 /* CameraSettingsButtonsView.swift */; };
+		CAA52F9626A72B0300D34413 /* MemoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA52F9526A72B0300D34413 /* MemoriesView.swift */; };
+		CAA52F9826A72B1300D34413 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA52F9726A72B1300D34413 /* ProfileView.swift */; };
+		CAA52F9A26A72B2500D34413 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA52F9926A72B2500D34413 /* SearchView.swift */; };
+		CAA52F9C26A72B4000D34413 /* AddFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA52F9B26A72B4000D34413 /* AddFriendsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		CAA52F8F26A5CDAA00D34413 /* HeaderBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBarView.swift; sourceTree = "<group>"; };
 		CAA52F9126A5CF1800D34413 /* ButtonsStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsStyles.swift; sourceTree = "<group>"; };
 		CAA52F9326A62D5A00D34413 /* CameraSettingsButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSettingsButtonsView.swift; sourceTree = "<group>"; };
+		CAA52F9526A72B0300D34413 /* MemoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriesView.swift; sourceTree = "<group>"; };
+		CAA52F9726A72B1300D34413 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CAA52F9926A72B2500D34413 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		CAA52F9B26A72B4000D34413 /* AddFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,10 @@
 				CA6C80A826A26FA600C74949 /* CameraView.swift */,
 				CAA52F8F26A5CDAA00D34413 /* HeaderBarView.swift */,
 				CAA52F9326A62D5A00D34413 /* CameraSettingsButtonsView.swift */,
+				CAA52F9526A72B0300D34413 /* MemoriesView.swift */,
+				CAA52F9726A72B1300D34413 /* ProfileView.swift */,
+				CAA52F9926A72B2500D34413 /* SearchView.swift */,
+				CAA52F9B26A72B4000D34413 /* AddFriendsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,12 +222,16 @@
 				CA6C80A526A26F1500C74949 /* StoriesView.swift in Sources */,
 				CA6C809D26A26ED900C74949 /* CustomTabBarView.swift in Sources */,
 				CA6C80A326A26F0D00C74949 /* ChatView.swift in Sources */,
+				CAA52F9826A72B1300D34413 /* ProfileView.swift in Sources */,
 				CA6C808A26A26E2400C74949 /* Snapchat_CloneApp.swift in Sources */,
+				CAA52F9C26A72B4000D34413 /* AddFriendsView.swift in Sources */,
 				CAA52F9426A62D5A00D34413 /* CameraSettingsButtonsView.swift in Sources */,
 				CAA52F8C26A5263A00D34413 /* Assets.swift in Sources */,
 				CAA52F8E26A5360C00D34413 /* TabBarViewModel.swift in Sources */,
+				CAA52F9A26A72B2500D34413 /* SearchView.swift in Sources */,
 				CAA52F9026A5CDAA00D34413 /* HeaderBarView.swift in Sources */,
 				CA6C80A726A26F2A00C74949 /* SpotlightView.swift in Sources */,
+				CAA52F9626A72B0300D34413 /* MemoriesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

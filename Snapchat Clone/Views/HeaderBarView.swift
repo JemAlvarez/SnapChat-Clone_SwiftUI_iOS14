@@ -6,25 +6,29 @@ struct HeaderBarView<Buttons: View, Header: View>: View {
     @ViewBuilder let buttons: () -> Buttons
     @ViewBuilder let header: () -> Header
     
+    @State var showingSearch = false
+    @State var showingProfile = false
+    
     @ViewBuilder
     var body: some View {
         ZStack {
             HStack {
                 HStack {
                     Button(action: {
-                        
+                        withAnimation {
+                            showingProfile.toggle()
+                        }
                     }) {
                         Image(systemName: "person.fill")
                             
                     }
                     .font(.system(size: 40))
-                    .foregroundColor(.yellow)
-                    .padding(0)
-                    .background(Color.secondary.opacity(0.1))
-                    .cornerRadius(99)
+                    .buttonStyle(ProfileButtonStyle())
                     
                     Button(action: {
-                        
+                        withAnimation {
+                            showingSearch.toggle()
+                        }
                     }) {
                         Image(systemName: "magnifyingglass")
                     }
@@ -43,6 +47,8 @@ struct HeaderBarView<Buttons: View, Header: View>: View {
                 .foregroundColor(.white)
                 .autocapitalization(.words)
         }
+        .sheet(isPresented: $showingSearch) { SearchView() }
+        .sheet(isPresented: $showingProfile) { ProfileView() }
     }
 }
 

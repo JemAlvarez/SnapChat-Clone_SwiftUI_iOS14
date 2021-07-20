@@ -4,6 +4,7 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var tabBarViewModel = TabBarViewModel()
+    @State var showingAddFriends = false
     
     init() {
         UIScrollView.appearance().bounces = false
@@ -16,14 +17,19 @@ struct MainView: View {
                     ScrollView {
                         TabView (selection: $tabBarViewModel.tab) {
                             MapView()
+                                .cornerRadius(15)
                                 .tag(0)
                             ChatView()
+                                .cornerRadius(15)
                                 .tag(1)
                             CameraView()
+                                .cornerRadius(15)
                                 .tag(2)
                             StoriesView()
+                                .cornerRadius(15)
                                 .tag(3)
                             SpotlightView()
+                                .cornerRadius(15)
                                 .tag(4)
                         }
                         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
@@ -32,7 +38,6 @@ struct MainView: View {
                         )
                     }
                 }
-                .cornerRadius(15)
                 .edgesIgnoringSafeArea(.all)
                 
                 if tabBarViewModel.tab == 2 {
@@ -42,14 +47,20 @@ struct MainView: View {
                 HeaderBarView {
                     if tabBarViewModel.tab != 0 && tabBarViewModel.tab != 2 && tabBarViewModel.tab != 4 {
                         Button(action: {
-                            
+                            withAnimation {
+                                showingAddFriends.toggle()
+                            }
                         }) {
                             Image(systemName: "person.fill.badge.plus")
                         }
                     }
                     
                     Button(action: {
-                        
+                        if tabBarViewModel.tab == 2 {
+                            withAnimation {
+                                showingAddFriends.toggle()
+                            }
+                        }
                     }) {
                         Image(systemName:
                             tabBarViewModel.tab == 0 ? "gearshape.fill" :
@@ -82,6 +93,7 @@ struct MainView: View {
         }
         .environmentObject(tabBarViewModel)
         .background(Color.black)
+        .sheet(isPresented: $showingAddFriends) { AddFriendsView() }
     }
 }
 

@@ -3,6 +3,8 @@
 import SwiftUI
 
 struct CameraView: View {
+    @State var showingMemories = false
+    
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
@@ -14,6 +16,11 @@ struct CameraView: View {
                     Spacer()
                     
                     Image(systemName: "rectangle.on.rectangle.angled")
+                        .onTapGesture {
+                            withAnimation {
+                                showingMemories.toggle()
+                            }
+                        }
                     
                     Circle().strokeBorder(Color.white, lineWidth: 10)
                         .frame(width: 100)
@@ -26,6 +33,8 @@ struct CameraView: View {
                 .frame(height: 85)
                 .padding(.bottom, 20)
             }
+            .foregroundColor(.white)
+            .sheet(isPresented: $showingMemories) { MemoriesView() }
         }
     }
 }
