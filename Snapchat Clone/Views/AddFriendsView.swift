@@ -46,7 +46,7 @@ struct AddFriendsView: View {
                         Image(systemName: "chevron.right")
                     }
                     .font(.system(size: 15))
-                    .foregroundColor(.gray)
+                    .opacity(0.7)
                 }
                 
                 ScrollView(showsIndicators: false) {
